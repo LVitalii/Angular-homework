@@ -1,0 +1,4 @@
+<div class="product-list" *ngIf="products.length">
+    <product-item *ngFor="let product of products" [product]="product" (delete)="delete($event)" (toggle)="toggle
+    ($event)"></product-item>
+</div>

@@ -1,0 +1,12 @@
+ <div class="product-item" [class.available]="product.available">
+    <button class="checkbox icon" (click)="onToggle()">
+        <i class="material-icons"> {{product.available ? 'check_box' : 'check_box_outline_blank'}}</i>
+    </button>
+    <span class = "title">{{product.title}}</span>
+
+    <div class="actions">
+        <button class="delete icon" (click)="onDelete()">
+            <i class="material-icons">delete</i>
+        </button>
+    </div>
+</div>

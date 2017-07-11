@@ -1,0 +1,4 @@
+<form class="product-form" (ngSubmit)="onSubmit(); productForm.reset()" #productForm="ngForm">
+            <input type="text" name="title" [(ngModel)]="title" placeholder="Please enter product title" required>
+            <button type="submit" [disabled]="productForm.form.invalid">Add</button>
+</form>
